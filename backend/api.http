@@ -1,12 +1,6 @@
 POST http://localhost:9000/api/auth/signup 
 Content-Type: application/json
 
-{
-  "name": "Arun",
-  "email": "arun@gmail.com",
-  "password": ""
-}
-
 ###
 POST http://localhost:9000/api/auth/login
 Content-Type: application/json

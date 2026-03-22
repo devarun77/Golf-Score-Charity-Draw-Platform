@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:9000/api"
+  baseURL: "https://golf-score-charity-draw-platform.onrender.com/api"
 });
 
 // Attach token automatically

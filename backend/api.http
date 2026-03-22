@@ -4,51 +4,37 @@ Content-Type: application/json
 {
   "name": "Arun",
   "email": "arun@gmail.com",
-  "password": "123456"
+  "password": ""
 }
 
 ###
 POST http://localhost:9000/api/auth/login
 Content-Type: application/json
 
-{
-  "email": "arun@gmail.com",
-  "password": "123456"
-}
 
 ###
 POST http://localhost:9000/api/scores/add
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmViZDRhZWEwMGFlZmZiZDIzNmY2MiIsImlhdCI6MTc3NDExMDkzMCwiZXhwIjoxNzc0NzE1NzMwfQ._QJQ_M1powoXTfs5XZZfL-rwe8HHRA52SRhaq2pi-Gs
+"
 
-{
-  "value": 34,
-  "date": "2026-03-21"
-}
 
 ###
 GET http://localhost:9000/api/scores
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmViZDRhZWEwMGFlZmZiZDIzNmY2MiIsImlhdCI6MTc3NDExMDkzMCwiZXhwIjoxNzc0NzE1NzMwfQ._QJQ_M1powoXTfs5XZZfL-rwe8HHRA52SRhaq2pi-Gs
-###
 
 POST  http://localhost:9000/api/draws/run
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmViZDRhZWEwMGFlZmZiZDIzNmY2MiIsImlhdCI6MTc3NDExMDYxMiwiZXhwIjoxNzc0NzE1NDEyfQ.s8EmDgyagAws3I5Xc2I4KsJN3VkU3EMCWaZixUXySK0
+
 
 ###
 GET  http://localhost:9000/api/draws
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmViZDRhZWEwMGFlZmZiZDIzNmY2MiIsImlhdCI6MTc3NDExMDkzMCwiZXhwIjoxNzc0NzE1NzMwfQ._QJQ_M1powoXTfs5XZZfL-rwe8HHRA52SRhaq2pi-Gs
 
-###
-GET http://localhost:9000/api/admin/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmVjNjNlN2I2MmM2YzE4ZTE2MDgwNiIsImlhdCI6MTc3NDExMDQxMiwiZXhwIjoxNzc0NzE1MjEyfQ.074cPAEKEweEBsA3zi3H849MIHdLglbH1n3E6eL-Hus
+
 
 ###
 GET http://localhost:9000/api/admin/winners
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmVjNjNlN2I2MmM2YzE4ZTE2MDgwNiIsImlhdCI6MTc3NDExMDQxMiwiZXhwIjoxNzc0NzE1MjEyfQ.074cPAEKEweEBsA3zi3H849MIHdLglbH1n3E6eL-Hus
+
 
 ###
 GET http://localhost:9000/api/admin/stats
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmVjNjNlN2I2MmM2YzE4ZTE2MDgwNiIsImlhdCI6MTc3NDExMDQxMiwiZXhwIjoxNzc0NzE1MjEyfQ.074cPAEKEweEBsA3zi3H849MIHdLglbH1n3E6eL-Hus

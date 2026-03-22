@@ -11,6 +11,7 @@ import scoreRoutes from "./routes/scoreRoutes.js";
 import drawRoutes from "./routes/drawRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import charityRoutes from "./routes/charityRoutes.js";
+import dataRoutes from "./routes/dataRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -31,6 +32,7 @@ app.use("/api/scores", scoreRoutes);
 app.use("/api/draws", drawRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/charities", charityRoutes);
+app.use("/api", dataRoutes);
 
 // Default Error handlerr
 app.use((err, req, res, next) => {
